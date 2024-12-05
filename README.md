@@ -1,4 +1,4 @@
-# Home Assistent Clients in C#
+# Home Assistent Clients in C-Sharp
 
 --------------------------
 

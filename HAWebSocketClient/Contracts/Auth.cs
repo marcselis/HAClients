@@ -10,12 +10,7 @@ namespace HAWebSocketClient.Contracts
       Type = "auth";
     }
 
-    public Auth(string accessToken) : this()
-    {
-      AccessToken = accessToken;
-    }
-
     [JsonPropertyName("access_token")]
-    public string AccessToken { get; set; }
+    public required string AccessToken { get; set; }
   }
 }

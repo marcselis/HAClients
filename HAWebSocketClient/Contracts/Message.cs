@@ -26,7 +26,8 @@ namespace HAWebSocketClient.Contracts
   }
 
   public record Error(
-    [property: JsonPropertyName("code")] string Code,
+    [property: JsonPropertyName("code")]
+    string Code,
     [property: JsonPropertyName("message")]
     string Message,
     [property: JsonPropertyName("translation_key")]

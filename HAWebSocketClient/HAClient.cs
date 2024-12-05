@@ -56,7 +56,7 @@ namespace HAWebSocketClient
       switch (msg.Type)
       {
         case "auth_required":
-          Reply(new Auth(_authorizationToken));
+          Reply(new HAWebSocketClient.Contracts.Auth {AccessToken = _authorizationToken});
           break;
         case "auth_ok":
           _logger.LogInformation("Authentication OK");
